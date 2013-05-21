@@ -13,8 +13,10 @@ browsers = ['Chrome'];
 singleRun = false;
 
 proxies = {
-  '/': 'http://localhost:8000/angular-phonecat'
+  '/': 'http://localhost:8080/angular-phonecat/'
 };
+
+urlRoot = '/__karma/';
 
 junitReporter = {
   outputFile: 'target/test_out/e2e.xml',

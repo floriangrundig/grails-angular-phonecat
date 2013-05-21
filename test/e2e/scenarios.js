@@ -4,9 +4,13 @@
 
 describe('PhoneCat App', function() {
 
+  beforeEach(function(){
+    browser().navigateTo('/');
+  });
+
   it('should redirect index.html to index.html#/phones', function() {
-      browser().navigateTo('/');
-      expect(browser().location().url()).toBe('/phones');
+    expect({value: '111'}).toBe('111');
+    expect(browser().location().url()).toBe('/phones');
   });
 
 
