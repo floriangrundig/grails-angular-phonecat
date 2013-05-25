@@ -1,10 +1,16 @@
-<r:require modules="application" />
 <!doctype html>
 <html lang="en" ng-app="phonecat">
 <head>
     <meta charset="utf-8">
     <title>Google Phone Gallery</title>
-    <r:layoutResources />
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="lib/angular/angular.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/services.js"></script>
+    <script src="lib/angular/angular-resource.js"></script>
 </head>
 <body>
 
@@ -157,6 +163,6 @@
     </div>
 </script>
 
-<r:layoutResources />
+
 </body>
 </html>

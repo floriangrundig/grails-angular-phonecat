@@ -8,9 +8,9 @@ files = [
 
 autoWatch = false;
 
-browsers = ['Chrome'];
+browsers = ['Chrome','Safari'];
 
-singleRun = false;
+singleRun = true;
 
 proxies = {
   '/': 'http://localhost:8080/angular-phonecat/'

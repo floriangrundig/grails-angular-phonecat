@@ -10,4 +10,8 @@ modules = {
         resource url:'js/services.js'
         resource url:'lib/angular/angular-resource.js'
     }
+
+  tests {
+        resource url:'js/test/e2e/scenarios.js'
+    }
 }

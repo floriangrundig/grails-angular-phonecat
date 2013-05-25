@@ -5,11 +5,10 @@
 describe('PhoneCat App', function() {
 
   beforeEach(function(){
-    browser().navigateTo('/');
+    browser().navigateTo('http://localhost:8080/angular-phonecat/');
   });
 
   it('should redirect index.html to index.html#/phones', function() {
-    expect({value: '111'}).toBe('111');
     expect(browser().location().url()).toBe('/phones');
   });
 
@@ -17,7 +16,7 @@ describe('PhoneCat App', function() {
   describe('Phone list view', function() {
 
     beforeEach(function() {
-      browser().navigateTo('/#/phones');
+      browser().navigateTo('http://localhost:8080/angular-phonecat/#/phones');
     });
 
 
@@ -58,7 +57,7 @@ describe('PhoneCat App', function() {
   describe('Phone detail view', function() {
 
     beforeEach(function() {
-      browser().navigateTo('/#/phones/nexus-s');
+      browser().navigateTo('http://localhost:8080/angular-phonecat/#/phones/nexus-s');
     });
 
 
