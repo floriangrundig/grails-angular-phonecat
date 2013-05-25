@@ -5,6 +5,11 @@
 This application is based on the angular tutorial: http://docs.angularjs.org/tutorial/index
 The angular tutorial was adapted as a grails application.
 
+## Open Issues
+- execute unit and e2e tests via test-app (maybe there is already a grails plugin)
+- the e2e test will not be executed if the resources-plugin is used
+    - static resources will be proxied correctly, but resource-bundles not
+
 
 ## Prerequisites
 
