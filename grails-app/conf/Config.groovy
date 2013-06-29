@@ -13,8 +13,6 @@ import grails.util.Environment
 //    grails.config.locations << "file:" + System.properties["${appName}.config.location"]
 // }
 
-// TODO: the processing of resources should be disabled only in test environment, when e2e tests will be executed
-grails.resources.processing.enabled = false // alternativly should set location of processed resources as proxy in karma-e2e.conf.js
 
 grails.project.groupId = appName // change this to alter the default package name and Maven publishing destination
 grails.mime.file.extensions = true // enables the parsing of file extensions from URLs into the request format

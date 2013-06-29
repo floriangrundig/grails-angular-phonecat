@@ -15,7 +15,7 @@ singleRun = true;
 proxies = {
   '/': 'http://localhost:8080/angular-phonecat/',
   '/angular-phonecat': 'http://localhost:8080/angular-phonecat/',
-  '/angular-phonecat/static': 'http://localhost:8080/angular-phonecat/'
+  '/angular-phonecat/static': 'http://localhost:8080/angular-phonecat/static'
 };
 
 urlRoot = '/__karma/';

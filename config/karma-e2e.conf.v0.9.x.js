@@ -19,7 +19,7 @@ module.exports = function (config) {
         proxies: {
             '/': 'http://localhost:8080/angular-phonecat/',
             '/angular-phonecat': 'http://localhost:8080/angular-phonecat/',
-            '/angular-phonecat/static': 'http://localhost:8080/angular-phonecat/'
+            '/angular-phonecat/static': 'http://localhost:8080/angular-phonecat/static'
         },
 
         urlRoot: '/__karma/',
@@ -41,4 +41,4 @@ module.exports = function (config) {
 
 autoWatch = false;
 
-browsers = ['Chrome', 'Safari', 'PhantomJS'];
+browsers = ['Chrome', 'Safari'];
