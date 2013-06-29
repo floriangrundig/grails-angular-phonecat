@@ -37,7 +37,7 @@ We recommend using [jasmine](http://pivotal.github.com/jasmine/) and
 [Karma](http://karma-runner.github.io) for your unit tests/specs, but you are free
 to use whatever works for you.
 
-Requires [node.js](http://nodejs.org/), Karma (`sudo npm install -g karma`) and a local
+Requires [node.js](http://nodejs.org/), Karma >v0.9.x (`sudo npm install -g karma@canary`) and a local
 or remote browser.
 
 * start `scripts/test.sh` (on windows: `scripts\test.bat`)
@@ -50,7 +50,7 @@ or remote browser.
 Angular ships with a baked-in end-to-end test runner that understands angular, your app and allows
 you to write your tests with jasmine-like BDD syntax.
 
-Requires a webserver, node.js + `./scripts/web-server.js` or your backend server that hosts the angular static files.
+Requires the running grails app.
 
 Check out the
 [end-to-end runner's documentation](http://docs.angularjs.org/guide/dev_guide.e2e-testing) for more
