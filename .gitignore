@@ -2,3 +2,5 @@
 .idea/*
 logs/*
 !.gitkeep
+target/
+node_modules/

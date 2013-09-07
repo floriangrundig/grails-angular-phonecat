@@ -25,10 +25,10 @@ grails.project.dependency.resolution = {
         inherits true // Whether to inherit repository definitions from plugins
 
         grailsPlugins()
-        grailsHome()
+       // grailsHome()
         grailsCentral()
 
-        mavenLocal()
+       // mavenLocal()
         mavenCentral()
 
         // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
@@ -42,15 +42,11 @@ grails.project.dependency.resolution = {
         // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
 
         // runtime 'mysql:mysql-connector-java:5.1.22'
-      def JETTY_VERSION ="7.5.0.v20110901"
-
-      compile "org.eclipse.jetty:jetty-distribution:$JETTY_VERSION"
 
     }
 
     plugins {
-        runtime ":hibernate:$grailsVersion"
-        runtime ":jquery:1.8.3"
+
         runtime ":resources:1.1.6"
 
         // Uncomment these (or add new ones) to enable additional resources capabilities
@@ -64,3 +60,5 @@ grails.project.dependency.resolution = {
         compile ':cache:1.0.1'
     }
 }
+
+grails.plugin.location."grails-karma" = "../grails-karma"

@@ -1,17 +1,17 @@
 module.exports = function (config) {
     config.set({
 
-        basePath: '../',
+        basePath: './../../../',
         files: [
-            ANGULAR_SCENARIO,
-            ANGULAR_SCENARIO_ADAPTER,
-            'test/e2e/**/*.js'
+            'test/javascript/e2e/**/*.js'
         ],
 
         //  export PHANTOMJS_BIN=/Users/florian/opt/phantomjs-1.8.1-macosx/bin/phantomjs
-        browsers: ['PhantomJS', 'Chrome'],
-        reporters: ['progress', 'junit', 'coverage'],
-        frameworks: ["jasmine"],
+        browsers: ['Chrome'],
+
+        reporters: ['remote'],
+
+        frameworks: ['ng-scenario'],
         autoWatch: false,
 
         singleRun: true,
@@ -23,22 +23,17 @@ module.exports = function (config) {
         },
 
         urlRoot: '/__karma/',
-
-        junitReporter: {
-            outputFile: 'target/test_out/e2e.xml',
-            suite: 'e2e'
+        remoteReporter: {
+            host: 'localhost',
+            port: '9876'
         },
+
         plugins: [
             'karma-jasmine',
             'karma-chrome-launcher',
-            'karma-phantomjs-launcher',
             'karma-ng-scenario',
-            'karma-junit-reporter'
+            'karma-remote-reporter'
         ]
     });
 };
 
-
-autoWatch = false;
-
-browsers = ['Chrome', 'Safari'];

@@ -1,33 +1,32 @@
 module.exports = function (config) {
     config.set({
 
-        basePath: '../',
+        basePath: './../../../',
         files: [
             'web-app/lib/angular/angular.js',
             'web-app/lib/angular/angular.js',
             'web-app/lib/angular/angular-loader.js',
             'web-app/lib/angular/angular-resource.js',
             'web-app/lib/angular/angular-sanitize.js',
-            'test/lib/angular/angular-mocks.js',
+            'test/javascript/lib/angular/angular-mocks.js',
             'web-app/js/*.js',
-            'test/unit/**/*.js'
+            'test/javascript/unit/**/*.js'
         ],
 
         //  export PHANTOMJS_BIN=/Users/florian/opt/phantomjs-1.8.1-macosx/bin/phantomjs
-        browsers: ['PhantomJS', 'Chrome'],
-        reporters: ['progress', 'junit', 'coverage'],
+        browsers: [ 'Chrome'],
+        reporters: ['remote'],
         frameworks: ["jasmine"],
         autoWatch: false,
-        junitReporter: {
-            outputFile: 'target/test_out/unit.xml',
-            suite: 'unit'
+        singleRun: true,
+        remoteReporter: {
+            host: 'localhost',
+            port: '9876'
         },
         plugins: [
             'karma-jasmine',
-            'karma-coverage',
             'karma-chrome-launcher',
-            'karma-phantomjs-launcher',
-            'karma-junit-reporter'
+            'karma-remote-reporter'
         ]
     });
 };
