@@ -61,4 +61,4 @@ grails.project.dependency.resolution = {
     }
 }
 
-grails.plugin.location."grails-karma" = "../grails-karma"
+grails.plugin.location."karma-test-runner" = "../karma-test-runner"
