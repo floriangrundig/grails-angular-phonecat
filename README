@@ -9,3 +9,10 @@ The angular tutorial was adapted as a grails application which uses the grails p
 ## Prerequisites
 * nodejs
 * install locally the required dependencies (go into the project root dir and execute "npm install" which will install the required depencies as defined in package.json)
+
+## Usage
+The javascript tests are located at /test/javascript/**/*.
+
+The test classes which trigger the execution of the javascript tests you'll find at /test/unit/**/* and /test/functional/**/*.
+
+Run "test-app" to execute the javascript tests within the grails lifecycle.
