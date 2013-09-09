@@ -13,7 +13,6 @@ module.exports = function (config) {
             'test/javascript/unit/**/*.js'
         ],
 
-        //  export PHANTOMJS_BIN=/Users/florian/opt/phantomjs-1.8.1-macosx/bin/phantomjs
         browsers: [ 'Chrome'],
         reporters: ['remote'],
         frameworks: ["jasmine"],
