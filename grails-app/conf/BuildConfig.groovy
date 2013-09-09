@@ -25,40 +25,21 @@ grails.project.dependency.resolution = {
         inherits true // Whether to inherit repository definitions from plugins
 
         grailsPlugins()
-       // grailsHome()
+        grailsHome()
         grailsCentral()
 
-       // mavenLocal()
+        mavenLocal()
         mavenCentral()
-
-        // uncomment these (or add new ones) to enable remote dependency resolution from public Maven repositories
-        //mavenRepo "http://snapshots.repository.codehaus.org"
-        //mavenRepo "http://repository.codehaus.org"
-        //mavenRepo "http://download.java.net/maven/2/"
-        //mavenRepo "http://repository.jboss.com/maven2/"
     }
 
     dependencies {
-        // specify dependencies here under either 'build', 'compile', 'runtime', 'test' or 'provided' scopes e.g.
-
-        // runtime 'mysql:mysql-connector-java:5.1.22'
-
     }
 
     plugins {
 
         runtime ":resources:1.1.6"
-
-        // Uncomment these (or add new ones) to enable additional resources capabilities
-        //runtime ":zipped-resources:1.0"
-        //runtime ":cached-resources:1.0"
-        //runtime ":yui-minify-resources:0.1.5"
-
         build ":tomcat:$grailsVersion"
-
-
         compile ':cache:1.0.1'
+        test ':karma-test-runner:0.1-SNAPSHOT'
     }
 }
-
-grails.plugin.location."karma-test-runner" = "../karma-test-runner"
