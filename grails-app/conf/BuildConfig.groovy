@@ -40,6 +40,6 @@ grails.project.dependency.resolution = {
         runtime ":resources:1.1.6"
         build ":tomcat:$grailsVersion"
         compile ':cache:1.0.1'
-        test ':karma-test-runner:0.1-SNAPSHOT'
+        test ':karma-test-runner:0.1.1'
     }
 }
