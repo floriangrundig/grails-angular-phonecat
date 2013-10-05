@@ -7,6 +7,7 @@ The angular tutorial was adapted as a grails application which uses the grails p
 
 
 ## Prerequisites
+* java 7
 * nodejs
 * install locally the required dependencies (go into the project root dir and execute "npm install" which will install the required depencies as defined in package.json)
 
