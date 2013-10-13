@@ -9,10 +9,10 @@ REM - Karma (npm install -g karma-ng-scenario)
 REM - Karma (npm install -g karma-ie-launcher)
 REM - Karma (npm install -g karma-remote-reporter)
 
-set PATH=%PATH%;"C:\Dokumente und Einstellungen\florian\Anwendungsdaten\npm"
+set PATH=%PATH%;"C:\Users\flo\AppData\Roaming\npm"
 
-set CHROME_BIN="C:\Programme\Google\Chrome\Application\chrome.exe"
-set IE_BIN="C:\Programme\Internet Explorer\iexplore.exe"
+set CHROME_BIN="C:\Program Files (x86)\Google\Chrome\Application\chrome.exe"
+set IE_BIN="C:\Program Files\Internet Explorer\iexplore.exe"
 
 set BASE_DIR=%~dp0
 karma start "%BASE_DIR%\..\test\javascript\config\karma-e2e.conf.js" %*

@@ -25,7 +25,7 @@ module.exports = function (config) {
         urlRoot: '/__karma/',
         remoteReporter: {
             host: 'localhost',
-            port: '9876'
+            port: '9877'
         },
 
         plugins: [
