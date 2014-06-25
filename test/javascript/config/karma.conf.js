@@ -3,18 +3,17 @@ module.exports = function (config) {
 
         basePath: './../../../',
         files: [
-            'web-app/lib/angular/angular.js',
-            'web-app/lib/angular/angular.js',
-            'web-app/lib/angular/angular-loader.js',
-            'web-app/lib/angular/angular-resource.js',
-            'web-app/lib/angular/angular-sanitize.js',
+            'grails-app/assets/javascripts/vendor/angular/angular.js',
+            'grails-app/assets/javascripts/vendor/angular/angular.js',
+            'grails-app/assets/javascripts/vendor/angular/angular-loader.js',
+            'grails-app/assets/javascripts/vendor/angular/angular-resource.js',
             'test/javascript/lib/angular/angular-mocks.js',
-            'web-app/js/*.js',
+            'grails-app/assets/javascripts/app/*.js',
             'test/javascript/unit/**/*.js'
         ],
 
-        browsers: [ 'Chrome'],
-        reporters: ['remote'],
+        browsers: [ 'PhantomJS'],
+        reporters: ['remote','dots'],
         frameworks: ["jasmine"],
         autoWatch: false,
         singleRun: true,
@@ -24,7 +23,7 @@ module.exports = function (config) {
         },
         plugins: [
             'karma-jasmine',
-            'karma-chrome-launcher',
+            'karma-phantomjs-launcher',
             'karma-remote-reporter'
         ]
     });

@@ -1,3 +1,6 @@
+//= require app/filters.js
+//= require app/services.js
+//= require app/controllers.js
 'use strict';
 
 /* App Module */
