@@ -13,7 +13,7 @@ module.exports = function (config) {
         ],
 
         browsers: [ 'PhantomJS'],
-        reporters: ['remote','dots'],
+        reporters: ['remote'],
         frameworks: ["jasmine"],
         autoWatch: false,
         singleRun: true,
