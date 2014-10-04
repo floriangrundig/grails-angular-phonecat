@@ -67,7 +67,7 @@ grails.project.dependency.resolution = {
         runtime ":hibernate4:4.3.5.4" // or ":hibernate:3.6.10.16"
         runtime ":database-migration:1.4.0"
         runtime ":jquery:1.11.1"
-        test ":karma-test-runner:0.2.1"
+        test ":karma-test-runner:0.2.2"
 
         // Uncomment these to enable additional asset-pipeline capabilities
         //compile ":sass-asset-pipeline:1.7.4"
@@ -76,3 +76,4 @@ grails.project.dependency.resolution = {
         //compile ":handlebars-asset-pipeline:1.3.0.3"
     }
 }
+//grails.plugin.location."karma-test-runner" = "../karma-test-runner"
