@@ -7,6 +7,7 @@ import org.junit.runner.RunWith;
 
 
 @RunWith(KarmaTestSuiteRunner.class)
+@KarmaTestSuiteRunner.KarmaProcessName("./node_modules/karma/bin/karma")
 @KarmaTestSuiteRunner.KarmaConfigPath("./test/javascript/config/karma-e2e.conf.js")
 @KarmaTestSuiteRunner.KarmaRemoteServerPort(9877)
 public class JavaScriptE2eTestKarmaSuite {
